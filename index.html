@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaChile - Tu Reporte del Tiempo</title>
+    <!-- Bootstrap CDN para diseño responsivo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- CABECERA Y NAVEGACIÓN SEMÁNTICA -->
+    <header class="bg-primary text-white shadow-sm">
+        <nav class="navbar navbar-dark container">
+            <span class="navbar-brand mb-0 h1 fw-bold">🌤️ ClimaChile MVP</span>
+            <div>
+                <button id="btn-nav-home" class="btn btn-outline-light btn-sm me-2">Inicio</button>
+                <span class="badge bg-info text-dark">Módulo 2</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container my-5 flex-grow-1">
+
+        <!-- VISTA 1: HOME (LISTADO DE 10 CIUDADES) -->
+        <section id="vista-home">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold text-dark">El tiempo en las regiones de Chile</h1>
+                <p class="lead text-muted">Selecciona una ciudad para ver el pronóstico detallado de la semana.</p>
+            </div>
+
+            <!-- Grilla responsiva de Bootstrap: 1 columna en móvil (≤420px), 3 o 4 en escritorio (≥1024px) -->
+            <div id="contenedor-ciudades" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <!-- Las 10 tarjetas de las ciudades se cargarán aquí dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <!-- VISTA 2: DETALLE DE LOCALIDAD (Oculta por defecto) -->
+        <section id="vista-detalle" class="d-none">
+            <!-- Botón para regresar al Home -->
+            <button id="btn-volver" class="btn btn-secondary mb-4">← Volver al inicio</button>
+
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm">
+                <div class="row align-items-center mb-4">
+                    <div class="col-md-6 text-center text-md-start">
+                        <span id="detalle-region" class="badge bg-primary mb-2">Región</span>
+                        <h2 id="detalle-ciudad" class="display-4 fw-bold">Nombre Ciudad</h2>
+                        <p id="detalle-estado" class="lead text-muted fs-3">Soleado</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <span id="detalle-temp" class="display-1 fw-bold text-dark">0°C</span>
+                    </div>
+                </div>
+
+                <!-- Datos adicionales -->
+                <div class="row g-3 mb-5">
+                    <div class="col-6 col-md-4">
+                        <div class="p-3 bg-light rounded text-center">
+                            <span class="text-muted d-block small">Viento</span>
+                            <strong id="detalle-viento" class="fs-5">0 km/h</strong>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="p-3 bg-light rounded text-center">
+                            <span class="text-muted d-block small">Humedad</span>
+                            <strong id="detalle-humedad" class="fs-5">0%</strong>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="p-3 bg-light rounded text-center">
+                            <span class="text-muted d-block small">Presión</span>
+                            <strong id="detalle-presion" class="fs-5">1013 hPa</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pronóstico semanal -->
+                <h3 class="mb-4 text-center text-md-start">Pronóstico para la Semana</h3>
+                <div id="contenedor-pronostico" class="row row-cols-2 row-cols-sm-3 row-cols-md-7 g-2 justify-content-center">
+                    <!-- Los días de la semana se generarán dinámicamente aquí -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER SEMÁNTICO -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">☀️ ClimaChile Frontend MVP - Desarrollado para el Bootcamp</p>
+            <small class="text-muted">© 2026 - Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap Bundle por CDN (Para que los componentes funcionen de forma responsiva) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Nuestra lógica de JavaScript -->
+    <script src="assets/js/clima.js"></script>
+</body>
+</html>
