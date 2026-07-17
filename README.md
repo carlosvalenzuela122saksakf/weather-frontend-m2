@@ -1,16 +1,23 @@
-# ClimaChile MVP - App de Clima Frontend 
+# ClimaChile - Tu Reporte del Tiempo (MVP Módulo 2)
 
-Este es el proyecto final del **Módulo 2** de desarrollo frontend. Es una aplicación móvil-first diseñada para mostrar el reporte del clima y pronóstico de 10 localidades de Chile.
+Una aplicación web interactiva y responsiva que muestra el pronóstico del tiempo de 10 localidades de Chile. Permite cambiar dinámicamente entre una vista general (Home) y una vista detallada para cada región, mostrando el clima de la semana con datos simulados en tiempo real.
+
+##  Enlaces del Proyecto
+
+*   **Repositorio de GitHub:** [https://github.com/carlosvalenzuela122saksakf/weather-frontend-m2](https://github.com/carlosvalenzuela122saksakf/weather-frontend-m2)
+*   **Demo en vivo (GitHub Pages):** [https://carlosvalenzuela122saksakf.github.io/weather-frontend-m2/](https://carlosvalenzuela122saksakf.github.io/weather-frontend-m2/)
 
 ##  Tecnologías Utilizadas
 
-- **HTML5 Semántico**: Uso estructurado de etiquetas como `<header>`, `<nav>`, `<main>`, `<section>`, y `<footer>`.
-- **Bootstrap 5 (v5.3.0)**: Diseño responsivo adaptado para pantallas móviles (≤420px) y de escritorio (≥1024px) utilizando la grilla nativa (`row-cols-*`) y clases utilitarias.
-- **JavaScript (Vanilla)**: Lógica para la manipulación dinámica del DOM, gestión de estados (vistas dinámicas sin recargar la página) y eventos interactivos.
-- **Git y GitHub**: Control de versiones y publicación de la plataforma.
+*   **HTML5:** Estructura semántica del sitio.
+*   **Bootstrap 5 (CDN):** Estilos, grilla responsiva de tarjetas y utilidades de diseño.
+*   **JavaScript (Vanilla - ES6):** Lógica interactiva para la carga dinámica de datos, manipulación segura del DOM y navegación entre vistas (SPA sin recarga de página).
 
-##  Cómo ejecutar el proyecto de forma local
+##  Estructura del Repositorio
 
-1. Descarga el archivo comprimido `.zip` o clona este repositorio:
-   ```bash
-   git clone [https://github.com/TU_USUARIO/weather-frontend-m2.git](https://carlosvalenzuela122saksakf.github.io/weather-frontend-m2/)
+```text
+├── index.html          # Estructura principal de la aplicación
+├── assets/             # Recursos del sitio
+│   └── js/
+│       └── clima.js    # Lógica de renderizado, eventos y base de datos local
+└── README.md           # Documentación del proyecto
