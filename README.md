@@ -13,4 +13,4 @@ Este es el proyecto final del **Módulo 2** de desarrollo frontend. Es una aplic
 
 1. Descarga el archivo comprimido `.zip` o clona este repositorio:
    ```bash
-   git clone [https://github.com/TU_USUARIO/weather-frontend-m2.git](https://github.com/TU_USUARIO/weather-frontend-m2.git)
+   git clone [https://github.com/TU_USUARIO/weather-frontend-m2.git](https://carlosvalenzuela122saksakf.github.io/weather-frontend-m2/)
